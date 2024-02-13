@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>CGPA Calculator</h2>
+
+<form action="calculate_cgpa.php" method="post">
+    <label for="numCourses">Number of Courses:</label>
+    <input type="number" id="numCourses" name="numCourses" min="1" required>
+    <br>
+
+    <?php
+    for ($i = 1; $i <= 10; $i++) { // Assuming a maximum of 10 courses, you can adjust this based on your needs
+        echo "<label for='courseName{$i}'>Course {$i} Name:</label>";
+        echo "<input type='text' id='courseName{$i}' name='courseName{$i}' required>";
+        echo "<br>";
+
+        echo "<label for='creditHours{$i}'>Credit Hours:</label>";
+        echo "<input type='number' id='creditHours{$i}' name='creditHours{$i}' min='1' required>";
+        echo "<br>";
+
+        echo "<label for='grade{$i}'>Grade:</label>";
+        echo "<input type='text' id='grade{$i}' name='grade{$i}' pattern='[A-Fa-f][+-]?|[0-9]+' title='Enter a valid grade' required>";
+        echo "<br><br>";
+    }
+    ?>
+
+    <input type="submit" value="Calculate">
+</form>
+
+</body>
+</html>
