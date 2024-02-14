@@ -47,6 +47,7 @@
 
 
                 // Display the results
+                echo "<p>Total Min Points: " . number_format($totalMinGradePoints, 2) . "</p>";
                 echo "<p>Minimum CGPA: " . number_format($min_cgpa, 2) . "</p>";
                 echo "<p>Maximum CGPA: " . number_format($max_cgpa, 2) . "</p>";
                 //Secho "<p>GPA: " . number_format(($totalGradePoints / $numSubjects), 2) . "</p>";
