@@ -2,26 +2,30 @@
 <html lang="en">
 <head>
     <style>
-        body{
-            align-items: center,
+        .main{
+            align-items: center;
         }
     </style>
  <title>Calculate CGPA UTHM</title>
 </head>
 <body>
+<div class="main">
 <h1>UTHM CGPA CALCULATOR</h1>
  <?php 
  $name = "Muhammad Asyraf";
  ?>
+ <form action="calculate.php" method="post">
  <table>
     <tr>
         <td></td>
     </tr>
  <tr>
  <td>Number of subjects : </td>
- <td><input type="text" name=""></input></td> 
+ <td><input type="text" name="subjects"></input></td> 
+ <td><input type="submit" name="submit" value="Go"></input></td>
  </tr>
  </table>
- 
+    </form>
+    </div>
 </body>
 </html>
