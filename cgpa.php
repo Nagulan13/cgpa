@@ -11,10 +11,7 @@
 <body>
 <div class="main">
 <h1>UTHM CGPA CALCULATOR</h1>
- <?php 
- $name = "Muhammad Asyraf";
- ?>
- <form action="calculate.php" method="post">
+ <form action="results.php" method="post">
  <table>
  <tr>
  <td>Number of subjects : </td>
