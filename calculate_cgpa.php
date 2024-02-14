@@ -46,6 +46,11 @@
             } else {
                 echo "<p>Error: Invalid input.</p>";
             }
+
+             // Add button to go back to main.php
+             echo "<form action='main.php' method='get'>";
+             echo "<input type='submit' value='Go back to Main Page'>";
+             echo "</form>";
         }
 
         // Function to convert grades to grade points (customize based on your grading system)
