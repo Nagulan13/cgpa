@@ -16,9 +16,6 @@
  ?>
  <form action="calculate.php" method="post">
  <table>
-    <tr>
-        <td></td>
-    </tr>
  <tr>
  <td>Number of subjects : </td>
  <td><input type="text" name="subjects"></input></td> 
